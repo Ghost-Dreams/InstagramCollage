@@ -1,16 +1,15 @@
 //
-//  BMSelectionPicCellDelegate.m
+//  BMInstagramImageDownloader.m
 //  BMInstaCollage
 //
-//  Created by Bogdan Matveev on 18.02.15.
+//  Created by Bogdan Matveev on 19.02.15.
 //  Copyright (c) 2015 BOGDAN MATVEEV. All rights reserved.
 //
 
-#import "BMSelectionPicCellDelegate.h"
+#import "BMInstagramImageDownloader.h"
 #import "BMURLStorage.h"
 
-@implementation BMSelectionPicCellDelegate
-
+@implementation BMInstagramImageDownloader
 - (void)checkImageWithUrl:(NSString*)imageUrl
 {
 	UIImage *img = [BMURLStorage getImageDownloadedForUrl:imageUrl];

@@ -7,14 +7,14 @@
 //
 
 #import "BMPicSelectionCollectionViewCell.h"
-#import "BMSelectionPicCellDelegate.h"
+#import "BMInstagramImageDownloader.h"
 
 
 @interface BMPicSelectionCollectionViewCell()<BMSelectionPicDelegate>
 @property (nonatomic,weak) UIImageView *selectorImageView;
 @property (nonatomic,weak) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIImageView *checkImageView;
-@property (nonatomic,strong) BMSelectionPicCellDelegate *selectionDelegate;
+@property (nonatomic,strong) BMInstagramImageDownloader *selectionDelegate;
 
 @end
 @implementation BMPicSelectionCollectionViewCell
@@ -24,7 +24,7 @@
 	self = [super initWithCoder:aDecoder];
 	if (self)
 	{
-		self.selectionDelegate = [[BMSelectionPicCellDelegate alloc]init];
+		self.selectionDelegate = [[BMInstagramImageDownloader alloc]init];
 		self.selectionDelegate.delegate = self;
 	}
 	return self;

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C56ADE41A94A1F2009FB05C /* BMSelectionPicCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56ADE31A94A1F2009FB05C /* BMSelectionPicCellDelegate.m */; };
 		2C56ADEB1A94C051009FB05C /* BMURLStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56ADEA1A94C051009FB05C /* BMURLStorage.m */; };
 		2C632F361A95E27A0024FE16 /* BMCollageMakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C632F351A95E27A0024FE16 /* BMCollageMakerViewController.m */; };
 		2C632F3F1A95F9480024FE16 /* BMCollageCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C632F3E1A95F9480024FE16 /* BMCollageCreator.m */; };
-		B273E35B1A93BF59004E9C14 /* BMConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B273E35A1A93BF59004E9C14 /* BMConnectionDelegate.m */; };
+		2C632F421A963B120024FE16 /* BMInstagramConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C632F411A963B120024FE16 /* BMInstagramConnector.m */; };
+		2C632F451A963B9B0024FE16 /* BMInstagramImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C632F441A963B9B0024FE16 /* BMInstagramImageDownloader.m */; };
 		B2DF2F811A92751C002942B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF2F801A92751C002942B6 /* main.m */; };
 		B2DF2F841A92751C002942B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF2F831A92751C002942B6 /* AppDelegate.m */; };
 		B2DF2F8A1A92751C002942B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DF2F881A92751C002942B6 /* Main.storyboard */; };
@@ -35,16 +35,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C56ADE21A94A1F2009FB05C /* BMSelectionPicCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSelectionPicCellDelegate.h; sourceTree = "<group>"; };
-		2C56ADE31A94A1F2009FB05C /* BMSelectionPicCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSelectionPicCellDelegate.m; sourceTree = "<group>"; };
 		2C56ADE91A94C051009FB05C /* BMURLStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMURLStorage.h; sourceTree = "<group>"; };
 		2C56ADEA1A94C051009FB05C /* BMURLStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMURLStorage.m; sourceTree = "<group>"; };
 		2C632F341A95E27A0024FE16 /* BMCollageMakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCollageMakerViewController.h; sourceTree = "<group>"; };
 		2C632F351A95E27A0024FE16 /* BMCollageMakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMCollageMakerViewController.m; sourceTree = "<group>"; };
 		2C632F3D1A95F9480024FE16 /* BMCollageCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCollageCreator.h; sourceTree = "<group>"; };
 		2C632F3E1A95F9480024FE16 /* BMCollageCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMCollageCreator.m; sourceTree = "<group>"; };
-		B273E3591A93BF59004E9C14 /* BMConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMConnectionDelegate.h; sourceTree = "<group>"; };
-		B273E35A1A93BF59004E9C14 /* BMConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMConnectionDelegate.m; sourceTree = "<group>"; };
+		2C632F401A963B120024FE16 /* BMInstagramConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInstagramConnector.h; sourceTree = "<group>"; };
+		2C632F411A963B120024FE16 /* BMInstagramConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInstagramConnector.m; sourceTree = "<group>"; };
+		2C632F431A963B9B0024FE16 /* BMInstagramImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInstagramImageDownloader.h; sourceTree = "<group>"; };
+		2C632F441A963B9B0024FE16 /* BMInstagramImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInstagramImageDownloader.m; sourceTree = "<group>"; };
 		B2DF2F7B1A92751C002942B6 /* BMInstaCollage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMInstaCollage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DF2F7F1A92751C002942B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2DF2F801A92751C002942B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -139,10 +139,10 @@
 		2C632F311A95DF090024FE16 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				B273E3591A93BF59004E9C14 /* BMConnectionDelegate.h */,
-				B273E35A1A93BF59004E9C14 /* BMConnectionDelegate.m */,
-				2C56ADE21A94A1F2009FB05C /* BMSelectionPicCellDelegate.h */,
-				2C56ADE31A94A1F2009FB05C /* BMSelectionPicCellDelegate.m */,
+				2C632F401A963B120024FE16 /* BMInstagramConnector.h */,
+				2C632F411A963B120024FE16 /* BMInstagramConnector.m */,
+				2C632F431A963B9B0024FE16 /* BMInstagramImageDownloader.h */,
+				2C632F441A963B9B0024FE16 /* BMInstagramImageDownloader.m */,
 				2C632F3D1A95F9480024FE16 /* BMCollageCreator.h */,
 				2C632F3E1A95F9480024FE16 /* BMCollageCreator.m */,
 			);
@@ -272,6 +272,7 @@
 				TargetAttributes = {
 					B2DF2F7A1A92751C002942B6 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 2B8G4FE524;
 					};
 					B2DF2F931A92751C002942B6 = {
 						CreatedOnToolsVersion = 6.1;
@@ -328,12 +329,12 @@
 				2C632F361A95E27A0024FE16 /* BMCollageMakerViewController.m in Sources */,
 				2C56ADEB1A94C051009FB05C /* BMURLStorage.m in Sources */,
 				B2ED8D901A946A350097158F /* BMPicSelectionCollectionViewCell.m in Sources */,
+				2C632F421A963B120024FE16 /* BMInstagramConnector.m in Sources */,
 				2C632F3F1A95F9480024FE16 /* BMCollageCreator.m in Sources */,
-				2C56ADE41A94A1F2009FB05C /* BMSelectionPicCellDelegate.m in Sources */,
 				B2DF2F841A92751C002942B6 /* AppDelegate.m in Sources */,
 				B2DF2F811A92751C002942B6 /* main.m in Sources */,
+				2C632F451A963B9B0024FE16 /* BMInstagramImageDownloader.m in Sources */,
 				B2ED8D8D1A9469890097158F /* BMPicSelectionViewController.m in Sources */,
-				B273E35B1A93BF59004E9C14 /* BMConnectionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +459,7 @@
 				INFOPLIST_FILE = BMInstaCollage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "EA632F1B-83E0-4EC5-B766-5E2B6FC3A436";
 			};
 			name = Debug;
 		};
@@ -468,6 +470,7 @@
 				INFOPLIST_FILE = BMInstaCollage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "EA632F1B-83E0-4EC5-B766-5E2B6FC3A436";
 			};
 			name = Release;
 		};

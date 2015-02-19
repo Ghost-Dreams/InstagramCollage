@@ -50,10 +50,12 @@
 {
     return 1;
 }
+
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
 	return self.mediaDataArray.count;
 }
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
 	BMPicSelectionCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageCell" forIndexPath:indexPath];
@@ -64,6 +66,7 @@
 	[cell setImageSelected:[self.selectedImagesArray containsObject:imageUrl]];
 	return cell;
 }
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
 	BMPicSelectionCollectionViewCell *cell = (BMPicSelectionCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];

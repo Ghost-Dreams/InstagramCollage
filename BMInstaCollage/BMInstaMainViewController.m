@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 BOGDAN MATVEEV. All rights reserved.
 //
 #import "BMInstaMainViewController.h"
-#import "BMConnectionDelegate.h"
+#import "BMInstagramConnector.h"
 #import "BMPicSelectionViewController.h"
 @interface BMInstaMainViewController () <BMInstagramConnectorDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
@@ -15,14 +15,14 @@
 @property (strong, nonatomic) UIView *blackIndicatorView;
 @property (strong, nonatomic) UIActivityIndicatorView *activityIndicator;
 
-@property (strong, nonatomic) BMConnectionDelegate *connectionDelegate;
+@property (strong, nonatomic) BMInstagramConnector *connectionDelegate;
 @end
 
 @implementation BMInstaMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.connectionDelegate = [[BMConnectionDelegate alloc] init];
+    self.connectionDelegate = [[BMInstagramConnector alloc] init];
     self.connectionDelegate.delegate = self;
     self.connectionDelegate.numberOfPhotos = 5;
 	
