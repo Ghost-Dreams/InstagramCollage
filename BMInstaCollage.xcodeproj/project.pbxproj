@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C56ADE41A94A1F2009FB05C /* BMSelectionPicCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56ADE31A94A1F2009FB05C /* BMSelectionPicCellDelegate.m */; };
+		2C56ADEB1A94C051009FB05C /* BMURLStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56ADEA1A94C051009FB05C /* BMURLStorage.m */; };
+		2C632F361A95E27A0024FE16 /* BMCollageMakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C632F351A95E27A0024FE16 /* BMCollageMakerViewController.m */; };
+		2C632F3F1A95F9480024FE16 /* BMCollageCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C632F3E1A95F9480024FE16 /* BMCollageCreator.m */; };
+		B273E35B1A93BF59004E9C14 /* BMConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B273E35A1A93BF59004E9C14 /* BMConnectionDelegate.m */; };
+		B2DF2F811A92751C002942B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF2F801A92751C002942B6 /* main.m */; };
+		B2DF2F841A92751C002942B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF2F831A92751C002942B6 /* AppDelegate.m */; };
+		B2DF2F8A1A92751C002942B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DF2F881A92751C002942B6 /* Main.storyboard */; };
+		B2DF2F8C1A92751C002942B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DF2F8B1A92751C002942B6 /* Images.xcassets */; };
+		B2DF2F8F1A92751C002942B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DF2F8D1A92751C002942B6 /* LaunchScreen.xib */; };
+		B2DF2F9B1A92751C002942B6 /* BMInstaCollageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF2F9A1A92751C002942B6 /* BMInstaCollageTests.m */; };
+		B2DF2FA61A927580002942B6 /* BMInstaMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF2FA51A927580002942B6 /* BMInstaMainViewController.m */; };
+		B2E69F5E1A951A8300212DC9 /* BMPicSelectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E69F5D1A951A8300212DC9 /* BMPicSelectionFlowLayout.m */; };
+		B2ED8D8D1A9469890097158F /* BMPicSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ED8D8C1A9469890097158F /* BMPicSelectionViewController.m */; };
+		B2ED8D901A946A350097158F /* BMPicSelectionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ED8D8F1A946A350097158F /* BMPicSelectionCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2DF2F951A92751C002942B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DF2F731A92751C002942B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DF2F7A1A92751C002942B6;
+			remoteInfo = BMInstaCollage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C56ADE21A94A1F2009FB05C /* BMSelectionPicCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSelectionPicCellDelegate.h; sourceTree = "<group>"; };
+		2C56ADE31A94A1F2009FB05C /* BMSelectionPicCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSelectionPicCellDelegate.m; sourceTree = "<group>"; };
+		2C56ADE91A94C051009FB05C /* BMURLStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMURLStorage.h; sourceTree = "<group>"; };
+		2C56ADEA1A94C051009FB05C /* BMURLStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMURLStorage.m; sourceTree = "<group>"; };
+		2C632F341A95E27A0024FE16 /* BMCollageMakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCollageMakerViewController.h; sourceTree = "<group>"; };
+		2C632F351A95E27A0024FE16 /* BMCollageMakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMCollageMakerViewController.m; sourceTree = "<group>"; };
+		2C632F3D1A95F9480024FE16 /* BMCollageCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCollageCreator.h; sourceTree = "<group>"; };
+		2C632F3E1A95F9480024FE16 /* BMCollageCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMCollageCreator.m; sourceTree = "<group>"; };
+		B273E3591A93BF59004E9C14 /* BMConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMConnectionDelegate.h; sourceTree = "<group>"; };
+		B273E35A1A93BF59004E9C14 /* BMConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMConnectionDelegate.m; sourceTree = "<group>"; };
+		B2DF2F7B1A92751C002942B6 /* BMInstaCollage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMInstaCollage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DF2F7F1A92751C002942B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DF2F801A92751C002942B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2DF2F821A92751C002942B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2DF2F831A92751C002942B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2DF2F891A92751C002942B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2DF2F8B1A92751C002942B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2DF2F8E1A92751C002942B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B2DF2F941A92751C002942B6 /* BMInstaCollageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMInstaCollageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2DF2F991A92751C002942B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DF2F9A1A92751C002942B6 /* BMInstaCollageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMInstaCollageTests.m; sourceTree = "<group>"; };
+		B2DF2FA41A927580002942B6 /* BMInstaMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInstaMainViewController.h; sourceTree = "<group>"; };
+		B2DF2FA51A927580002942B6 /* BMInstaMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInstaMainViewController.m; sourceTree = "<group>"; };
+		B2E69F5C1A951A8300212DC9 /* BMPicSelectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPicSelectionFlowLayout.h; sourceTree = "<group>"; };
+		B2E69F5D1A951A8300212DC9 /* BMPicSelectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPicSelectionFlowLayout.m; sourceTree = "<group>"; };
+		B2ED8D8B1A9469890097158F /* BMPicSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPicSelectionViewController.h; sourceTree = "<group>"; };
+		B2ED8D8C1A9469890097158F /* BMPicSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPicSelectionViewController.m; sourceTree = "<group>"; };
+		B2ED8D8E1A946A350097158F /* BMPicSelectionCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMPicSelectionCollectionViewCell.h; sourceTree = "<group>"; };
+		B2ED8D8F1A946A350097158F /* BMPicSelectionCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMPicSelectionCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2DF2F781A92751C002942B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DF2F911A92751C002942B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C56ADDB1A94A167009FB05C /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				2C632F301A95DEE50024FE16 /* Classes */,
+				2C56ADDC1A94A17A009FB05C /* MainVC */,
+				2C56ADDD1A94A18B009FB05C /* SelectionVC */,
+				2C632F331A95DF540024FE16 /* CollageMakerVC */,
+				B2DF2F821A92751C002942B6 /* AppDelegate.h */,
+				B2DF2F831A92751C002942B6 /* AppDelegate.m */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		2C56ADDC1A94A17A009FB05C /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF2FA41A927580002942B6 /* BMInstaMainViewController.h */,
+				B2DF2FA51A927580002942B6 /* BMInstaMainViewController.m */,
+			);
+			name = MainVC;
+			sourceTree = "<group>";
+		};
+		2C56ADDD1A94A18B009FB05C /* SelectionVC */ = {
+			isa = PBXGroup;
+			children = (
+				B2ED8D8B1A9469890097158F /* BMPicSelectionViewController.h */,
+				B2ED8D8C1A9469890097158F /* BMPicSelectionViewController.m */,
+				2C56ADDE1A94A1A0009FB05C /* Cell */,
+			);
+			name = SelectionVC;
+			sourceTree = "<group>";
+		};
+		2C56ADDE1A94A1A0009FB05C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B2ED8D8E1A946A350097158F /* BMPicSelectionCollectionViewCell.h */,
+				B2ED8D8F1A946A350097158F /* BMPicSelectionCollectionViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		2C632F301A95DEE50024FE16 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C632F321A95DF190024FE16 /* Layout */,
+				2C632F311A95DF090024FE16 /* Delegates */,
+				2C56ADE91A94C051009FB05C /* BMURLStorage.h */,
+				2C56ADEA1A94C051009FB05C /* BMURLStorage.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2C632F311A95DF090024FE16 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B273E3591A93BF59004E9C14 /* BMConnectionDelegate.h */,
+				B273E35A1A93BF59004E9C14 /* BMConnectionDelegate.m */,
+				2C56ADE21A94A1F2009FB05C /* BMSelectionPicCellDelegate.h */,
+				2C56ADE31A94A1F2009FB05C /* BMSelectionPicCellDelegate.m */,
+				2C632F3D1A95F9480024FE16 /* BMCollageCreator.h */,
+				2C632F3E1A95F9480024FE16 /* BMCollageCreator.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		2C632F321A95DF190024FE16 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				B2E69F5C1A951A8300212DC9 /* BMPicSelectionFlowLayout.h */,
+				B2E69F5D1A951A8300212DC9 /* BMPicSelectionFlowLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		2C632F331A95DF540024FE16 /* CollageMakerVC */ = {
+			isa = PBXGroup;
+			children = (
+				2C632F341A95E27A0024FE16 /* BMCollageMakerViewController.h */,
+				2C632F351A95E27A0024FE16 /* BMCollageMakerViewController.m */,
+			);
+			name = CollageMakerVC;
+			sourceTree = "<group>";
+		};
+		B2DF2F721A92751C002942B6 = {
+			isa = PBXGroup;
+			children = (
+				B2DF2F7D1A92751C002942B6 /* BMInstaCollage */,
+				B2DF2F971A92751C002942B6 /* BMInstaCollageTests */,
+				B2DF2F7C1A92751C002942B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2DF2F7C1A92751C002942B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF2F7B1A92751C002942B6 /* BMInstaCollage.app */,
+				B2DF2F941A92751C002942B6 /* BMInstaCollageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2DF2F7D1A92751C002942B6 /* BMInstaCollage */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF2F881A92751C002942B6 /* Main.storyboard */,
+				2C56ADDB1A94A167009FB05C /* Code */,
+				B2DF2F8B1A92751C002942B6 /* Images.xcassets */,
+				B2DF2F8D1A92751C002942B6 /* LaunchScreen.xib */,
+				B2DF2F7E1A92751C002942B6 /* Supporting Files */,
+			);
+			path = BMInstaCollage;
+			sourceTree = "<group>";
+		};
+		B2DF2F7E1A92751C002942B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF2F7F1A92751C002942B6 /* Info.plist */,
+				B2DF2F801A92751C002942B6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2DF2F971A92751C002942B6 /* BMInstaCollageTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF2F9A1A92751C002942B6 /* BMInstaCollageTests.m */,
+				B2DF2F981A92751C002942B6 /* Supporting Files */,
+			);
+			path = BMInstaCollageTests;
+			sourceTree = "<group>";
+		};
+		B2DF2F981A92751C002942B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF2F991A92751C002942B6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2DF2F7A1A92751C002942B6 /* BMInstaCollage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DF2F9E1A92751C002942B6 /* Build configuration list for PBXNativeTarget "BMInstaCollage" */;
+			buildPhases = (
+				B2DF2F771A92751C002942B6 /* Sources */,
+				B2DF2F781A92751C002942B6 /* Frameworks */,
+				B2DF2F791A92751C002942B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMInstaCollage;
+			productName = BMInstaCollage;
+			productReference = B2DF2F7B1A92751C002942B6 /* BMInstaCollage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2DF2F931A92751C002942B6 /* BMInstaCollageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2DF2FA11A92751C002942B6 /* Build configuration list for PBXNativeTarget "BMInstaCollageTests" */;
+			buildPhases = (
+				B2DF2F901A92751C002942B6 /* Sources */,
+				B2DF2F911A92751C002942B6 /* Frameworks */,
+				B2DF2F921A92751C002942B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2DF2F961A92751C002942B6 /* PBXTargetDependency */,
+			);
+			name = BMInstaCollageTests;
+			productName = BMInstaCollageTests;
+			productReference = B2DF2F941A92751C002942B6 /* BMInstaCollageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2DF2F731A92751C002942B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "BOGDAN MATVEEV";
+				TargetAttributes = {
+					B2DF2F7A1A92751C002942B6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					B2DF2F931A92751C002942B6 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = B2DF2F7A1A92751C002942B6;
+					};
+				};
+			};
+			buildConfigurationList = B2DF2F761A92751C002942B6 /* Build configuration list for PBXProject "BMInstaCollage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2DF2F721A92751C002942B6;
+			productRefGroup = B2DF2F7C1A92751C002942B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2DF2F7A1A92751C002942B6 /* BMInstaCollage */,
+				B2DF2F931A92751C002942B6 /* BMInstaCollageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2DF2F791A92751C002942B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DF2F8A1A92751C002942B6 /* Main.storyboard in Resources */,
+				B2DF2F8F1A92751C002942B6 /* LaunchScreen.xib in Resources */,
+				B2DF2F8C1A92751C002942B6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DF2F921A92751C002942B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2DF2F771A92751C002942B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E69F5E1A951A8300212DC9 /* BMPicSelectionFlowLayout.m in Sources */,
+				B2DF2FA61A927580002942B6 /* BMInstaMainViewController.m in Sources */,
+				2C632F361A95E27A0024FE16 /* BMCollageMakerViewController.m in Sources */,
+				2C56ADEB1A94C051009FB05C /* BMURLStorage.m in Sources */,
+				B2ED8D901A946A350097158F /* BMPicSelectionCollectionViewCell.m in Sources */,
+				2C632F3F1A95F9480024FE16 /* BMCollageCreator.m in Sources */,
+				2C56ADE41A94A1F2009FB05C /* BMSelectionPicCellDelegate.m in Sources */,
+				B2DF2F841A92751C002942B6 /* AppDelegate.m in Sources */,
+				B2DF2F811A92751C002942B6 /* main.m in Sources */,
+				B2ED8D8D1A9469890097158F /* BMPicSelectionViewController.m in Sources */,
+				B273E35B1A93BF59004E9C14 /* BMConnectionDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DF2F901A92751C002942B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DF2F9B1A92751C002942B6 /* BMInstaCollageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2DF2F961A92751C002942B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2DF2F7A1A92751C002942B6 /* BMInstaCollage */;
+			targetProxy = B2DF2F951A92751C002942B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2DF2F881A92751C002942B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2DF2F891A92751C002942B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2DF2F8D1A92751C002942B6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2DF2F8E1A92751C002942B6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2DF2F9C1A92751C002942B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B2DF2F9D1A92751C002942B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2DF2F9F1A92751C002942B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BMInstaCollage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2DF2FA01A92751C002942B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BMInstaCollage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2DF2FA21A92751C002942B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BMInstaCollageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMInstaCollage.app/BMInstaCollage";
+			};
+			name = Debug;
+		};
+		B2DF2FA31A92751C002942B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BMInstaCollageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMInstaCollage.app/BMInstaCollage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2DF2F761A92751C002942B6 /* Build configuration list for PBXProject "BMInstaCollage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DF2F9C1A92751C002942B6 /* Debug */,
+				B2DF2F9D1A92751C002942B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DF2F9E1A92751C002942B6 /* Build configuration list for PBXNativeTarget "BMInstaCollage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DF2F9F1A92751C002942B6 /* Debug */,
+				B2DF2FA01A92751C002942B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2DF2FA11A92751C002942B6 /* Build configuration list for PBXNativeTarget "BMInstaCollageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DF2FA21A92751C002942B6 /* Debug */,
+				B2DF2FA31A92751C002942B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2DF2F731A92751C002942B6 /* Project object */;
+}
