@@ -5,7 +5,7 @@
 //  Created by Bogdan Matveev on 19.02.15.
 //  Copyright (c) 2015 BOGDAN MATVEEV. All rights reserved.
 //
-#define COLLAGE_IMAGE_SIDE_SIZE 1000
+#define COLLAGE_IMAGE_SIDE_SIZE 600
 #define IMAGE_INSET 5.f
 #define IMAGE_CORNER_RADIUS 20.f
 #import "BMCollageCreator.h"

@@ -22,4 +22,8 @@
     float size = self.collectionView.bounds.size.width/3-10;
     return CGSizeMake(size, size);
 }
+-(void)prepareLayout
+{
+	self.collectionView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
+}
 @end

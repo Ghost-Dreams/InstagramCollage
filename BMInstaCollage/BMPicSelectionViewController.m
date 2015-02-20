@@ -32,6 +32,11 @@
 	_mediaDataArray = [NSArray arrayWithArray:mediaDataArray];
 }
 
+- (void) viewDidLoad
+{
+	[super viewDidLoad];
+	
+}
 - (void) viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
@@ -45,6 +50,7 @@
 	[self.collectionView reloadData];
 }
 
+#pragma mark -=CollectionView methods=-
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -81,7 +87,7 @@
 	else
 		[self.selectedImagesArray addObject:imageUrl];
 	
-
+	
 	[cell setImageSelected:!isSelected];
 	self.choosePhotosLabel.text = [NSString stringWithFormat:@"Осталось выбрать: %li",4 - self.selectedImagesArray.count];
 	
@@ -89,6 +95,7 @@
 		[self proceedToPreview];
 }
 
+#pragma mark -
 - (void)proceedToPreview;
 {
 	BMCollageMakerViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"CollageMakerVC"];

@@ -23,9 +23,8 @@
 	[[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:getUserInfoUrlString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
 		if (!error)
 		{
-			NSError *jsonParsingError;
-			NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonParsingError];
-			if (!jsonParsingError)
+			NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+			if (!error)
 			{
 				NSDictionary *meta = jsonData[@"meta"];
 				if ([meta[@"code"] integerValue] == 200 )
@@ -62,9 +61,8 @@
 	[[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:getUserInfoUrlString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
 		if (!error)
 		{
-			NSError *jsonParsingError;
-			NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonParsingError];
-			if (!jsonParsingError)
+			NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+			if (!error)
 			{
 				NSDictionary *meta = jsonData[@"meta"];
 				if ([meta[@"code"] integerValue] == 200)
@@ -96,9 +94,8 @@
 	[[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:mediaInfoUrl] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
 		if (!error)
 		{
-			NSError *jsonParsingError;
-			NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonParsingError];
-			if (!jsonParsingError)
+			NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+			if (!error)
 			{
 				NSDictionary *meta = jsonData[@"meta"];
 				if ([meta[@"code"] integerValue] == 200)

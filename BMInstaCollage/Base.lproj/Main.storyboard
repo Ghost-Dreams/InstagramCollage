@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BM_main_blured_view" translatesAutoresizingMaskIntoConstraints="NO" id="GcS-Ze-rgP" userLabel="Blured image view">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BM_main_blured_view" translatesAutoresizingMaskIntoConstraints="NO" id="GcS-Ze-rgP" userLabel="Blured image view">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbJ-gb-NkR" userLabel="Text Field">
@@ -77,6 +77,7 @@
                     <navigationItem key="navigationItem" id="F3M-Bf-xtb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bluredImageView" destination="GcS-Ze-rgP" id="sT9-9T-VAz"/>
                         <outlet property="getPhotoButton" destination="O2R-wm-a24" id="fhA-ss-vUC"/>
                         <outlet property="usernameTextField" destination="vbJ-gb-NkR" id="tEW-rG-TP3"/>
                     </connections>
@@ -100,10 +101,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BM_main_blured_view" translatesAutoresizingMaskIntoConstraints="NO" id="K13-gY-2PA" userLabel="Blured image view">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите 4 фото" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doP-C6-Vjm">
+                                <rect key="frame" x="88" y="526" width="144" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwY-C4-Cdu">
+                                <rect key="frame" x="0.0" y="488" width="320" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZU2-2l-bmd"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sSV-WP-lTg">
-                                <rect key="frame" x="5" y="80" width="310" height="408"/>
+                                <rect key="frame" x="5" y="64" width="310" height="424"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <collectionViewLayout key="collectionViewLayout" id="ke9-aV-Ol1" customClass="BMPicSelectionFlowLayout"/>
+                                <collectionViewLayout key="collectionViewLayout" id="UkW-YW-r3e" customClass="BMPicSelectionFlowLayout"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="QoS-MK-Lww" customClass="BMPicSelectionCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -177,31 +191,28 @@
                                     <outlet property="delegate" destination="xOc-TV-eKN" id="Vw8-0z-GoK"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите 4 фото" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doP-C6-Vjm">
-                                <rect key="frame" x="88" y="526" width="144" height="22"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="K13-gY-2PA" firstAttribute="top" secondItem="bK5-cA-RoL" secondAttribute="top" id="91N-zm-JS2"/>
                             <constraint firstItem="Psf-Ax-mdi" firstAttribute="top" secondItem="sSV-WP-lTg" secondAttribute="bottom" constant="80" id="9WY-V9-wr1"/>
                             <constraint firstItem="sSV-WP-lTg" firstAttribute="leading" secondItem="bK5-cA-RoL" secondAttribute="leading" constant="5" id="D23-h0-eyS"/>
+                            <constraint firstItem="TwY-C4-Cdu" firstAttribute="leading" secondItem="bK5-cA-RoL" secondAttribute="leading" id="Ncv-fH-04F"/>
                             <constraint firstItem="Psf-Ax-mdi" firstAttribute="top" secondItem="doP-C6-Vjm" secondAttribute="bottom" constant="20" id="QvY-zh-cvL"/>
                             <constraint firstAttribute="trailing" secondItem="sSV-WP-lTg" secondAttribute="trailing" constant="5" id="SXr-jT-XdV"/>
                             <constraint firstItem="Psf-Ax-mdi" firstAttribute="top" secondItem="K13-gY-2PA" secondAttribute="bottom" id="Y0o-5H-tMV"/>
                             <constraint firstItem="K13-gY-2PA" firstAttribute="leading" secondItem="bK5-cA-RoL" secondAttribute="leading" id="aEO-GS-0Su"/>
+                            <constraint firstItem="TwY-C4-Cdu" firstAttribute="top" secondItem="sSV-WP-lTg" secondAttribute="bottom" id="aF1-qU-i0v"/>
                             <constraint firstAttribute="trailing" secondItem="K13-gY-2PA" secondAttribute="trailing" id="egT-Mx-KY5"/>
-                            <constraint firstItem="sSV-WP-lTg" firstAttribute="top" secondItem="bK5-cA-RoL" secondAttribute="top" constant="80" id="uGK-lu-0Go"/>
+                            <constraint firstAttribute="trailing" secondItem="TwY-C4-Cdu" secondAttribute="trailing" id="sgU-oi-f69"/>
+                            <constraint firstItem="sSV-WP-lTg" firstAttribute="top" secondItem="bK5-cA-RoL" secondAttribute="top" constant="64" id="uGK-lu-0Go"/>
                             <constraint firstAttribute="centerX" secondItem="doP-C6-Vjm" secondAttribute="centerX" id="yF3-iu-ODx"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="choosePhotosLabel" destination="doP-C6-Vjm" id="ztI-AL-ta5"/>
-                        <outlet property="collectionView" destination="sSV-WP-lTg" id="YWl-iv-URT"/>
+                        <outlet property="collectionView" destination="sSV-WP-lTg" id="zcw-82-IXQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAJ-FH-V5h" userLabel="First Responder" sceneMemberID="firstResponder"/>

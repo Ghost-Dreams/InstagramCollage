@@ -11,6 +11,7 @@
 @interface BMInstaMainViewController () <BMInstagramConnectorDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UIButton *getPhotoButton;
+@property (weak, nonatomic) IBOutlet UIImageView *bluredImageView;
 
 @property (strong, nonatomic) UIView *blackIndicatorView;
 @property (strong, nonatomic) UIActivityIndicatorView *activityIndicator;
@@ -29,17 +30,11 @@
 	self.getPhotoButton.layer.borderColor = [UIColor whiteColor].CGColor;
 	self.getPhotoButton.layer.borderWidth = 1.f;
 	self.getPhotoButton.layer.cornerRadius = 6.f;
-}
+	
+	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+	
+	[self.bluredImageView addGestureRecognizer:tap];
 
-
-- (IBAction)getPhotosButtonPressed:(id)sender {
-    if (!self.usernameTextField.text.length)
-    {
-        [self sendAlertWithMessage:@"Введите сначала имя пользователя"];
-        return;
-    }
-   
-    [self.connectionDelegate findUserWithNickName:self.usernameTextField.text];
 }
 
 - (void)proceedWithMediaArray:(NSArray *)mediaDataArray
@@ -51,6 +46,23 @@
 		[self.navigationController pushViewController:picSelectionVc animated:YES];
 	});
 }
+
+
+- (IBAction)getPhotosButtonPressed:(id)sender {
+	if (!self.usernameTextField.text.length)
+	{
+		[self sendAlertWithMessage:@"Введите сначала имя пользователя"];
+		return;
+	}
+	
+	[self.connectionDelegate findUserWithNickName:self.usernameTextField.text];
+}
+
+-(void)dismissKeyboard
+{
+	[self.usernameTextField resignFirstResponder];
+}
+
 #pragma mark -=Delegate methods=-
 - (void)sendAlertWithMessage:(NSString*)message
 {
